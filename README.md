@@ -1,2 +1,9 @@
 # Codificar-String-si-no-lo-esta
-Codificar caracteres especiales a utf-8 si no lo estan
+
+<code>
+  <?php
+    if (!preg_match('!!u', $value)){
+   		$value = utf8_encode($value);
+		}
+  ?>
+</code>
